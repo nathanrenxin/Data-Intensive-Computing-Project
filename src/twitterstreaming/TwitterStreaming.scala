@@ -26,10 +26,10 @@ object TwitterStreaming {
     val spark = SparkSession.builder.master("local[*]").appName("TwitterStreaming").getOrCreate()
 
     //val ssc = new StreamingContext(spark.sparkContext, Seconds(5))
-    System.setProperty("twitter4j.oauth.consumerKey", "JYeCb8RfdpZxi4NL68XvlBJFB")
-    System.setProperty("twitter4j.oauth.consumerSecret", "kO17s5pldOWeChj57kaOBepBFRjKpcS79bapISDXTcd7kJl0am")
-    System.setProperty("twitter4j.oauth.accessToken", "1128218748-pSfig5cyOIilLTGBNRVyca9PEIoCfOG1eurm02N")
-    System.setProperty("twitter4j.oauth.accessTokenSecret", "mtHWtozu3qdmOhFaoeH3tXxKgspBAYJdDMh9xXKrvWP1l")
+    System.setProperty("twitter4j.oauth.consumerKey", "<Yours>")
+    System.setProperty("twitter4j.oauth.consumerSecret", "<Yours>")
+    System.setProperty("twitter4j.oauth.accessToken", "<Yours>")
+    System.setProperty("twitter4j.oauth.accessTokenSecret", "<Yours>")
 
     // Set the saving schema for DF, empty array, get the context and create a counter
     val schema = StructType(
